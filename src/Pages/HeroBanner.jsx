@@ -6,7 +6,7 @@ const HeroBanner = () => {
     <>
       <Box
         sx={{
-          mt: { lg: '212px', xs: '70px' },
+          mt: { lg: '42px', xs: '70px' },
           ml: { sm: '50px' },
           position: 'relative',
           p: '20px',
@@ -26,8 +26,9 @@ const HeroBanner = () => {
         </Button>
         <Typography
           fontWeight="600"
-          color="#000"
-          sx={{ opacity: 0.1, display: { lg: 'block', xs: 'none' } }}
+          color="#ff2625"
+          sx={{ opacity:0.3, display: { lg: 'block', xs: 'none' } }}
+          fontSize='200px'
         >
           Exercise
         </Typography>
@@ -36,7 +37,7 @@ const HeroBanner = () => {
         <img
           src={Banner}
           alt="banner"
-          className="block lg:hidden w-full mt-6"
+          className="block lg:hidden display-none mt-6"
         />
       </Box>
 

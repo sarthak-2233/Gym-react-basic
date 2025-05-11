@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import envCompatible from 'vite-plugin-env-compatible'
 // https://vite.dev/config/
+envPrefix:"REACT_APP_"
 export default defineConfig({
   plugins: [react(),
     tailwindcss(),
+    envCompatible(),
   ],
 })
