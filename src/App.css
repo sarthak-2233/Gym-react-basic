@@ -1,1 +1,22 @@
 @import "tailwindcss";
+/* Target all horizontal scrollbars inside react-horizontal-scrolling-menu */
+.react-horizontal-scrolling-menu--scroll-container {
+  scrollbar-width: none !important;  /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
+  overflow-x: auto !important;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none !important;  /* Chrome, Safari, Opera */
+}
+
+/* Also hide any scrollbars on the parent container */
+.hide-scrollbar {
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
